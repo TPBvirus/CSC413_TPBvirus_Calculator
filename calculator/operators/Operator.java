@@ -2,6 +2,9 @@ package calculator.operators;
 
 import calculator.evaluator.Operand;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public abstract class Operator {
     // The Operator class should contain an instance of a HashMap
     // This map will use keys as the tokens we're interested in,
@@ -14,7 +17,14 @@ public abstract class Operator {
     // operators.put( "+", new AdditionOperator() );
     // operators.put( "-", new SubtractionOperator() );
 
-
+    private static Map<String,Operator> Operators = new HashMap<>();
+    static {
+        Operators.put("+", new AddOperator());
+        Operators.put("-", new SubtractOperator());
+        Operators.put("*", new MultiplyOperator());
+        Operators.put("/", new DivideOperator());
+        Operators.put("^", new PowerOperator());
+    }
     /**
      * retrieve the priority of an Operator
      * @return priority of an Operator as an int
@@ -38,6 +48,7 @@ public abstract class Operator {
      * @return reference to a Operator instance.
      */
     public static Operator getOperator(String token) {
+
         return null;
     }
 

@@ -38,7 +38,7 @@ public class Evaluator {
 
           // TODO fix this line of code.
           //cannot instantiate abstract classes
-          Operator newOperator = new Operator();
+          Operator newOperator = Operator.getOperator( expressionToken );
 
          
             while (operatorStack.peek().priority() >= newOperator.priority() ) {
