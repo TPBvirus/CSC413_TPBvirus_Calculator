@@ -2,11 +2,11 @@
 
 ## Student Information
 
-### Student Name  : Name here
+### Student Name  : Thomas Bercasio
 
-### Student ID    : ID here
+### Student ID    : 920652106
 
-### Student Email : Email here
+### Student Email : tbercasio@sfsu.edu
 
 ## Requirements
 
