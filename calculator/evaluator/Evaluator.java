@@ -19,7 +19,7 @@ public class Evaluator {
   public int evaluateExpression(String expression ) throws InvalidTokenException {
     String expressionToken;
     StringTokenizer expressionTokenizer;
-    String delimiters = " +/*-^";
+    String delimiters = " +/*-^()";
 
     // 3 arguments tells the tokenizer to return delimiters as tokens
     expressionTokenizer = new StringTokenizer( expression, delimiters, true );
@@ -37,6 +37,7 @@ public class Evaluator {
 
 
           // TODO fix this line of code.
+          //cannot instantiate abstract classes
           Operator newOperator = new Operator();
 
          
